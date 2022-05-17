@@ -1,0 +1,20 @@
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+
+<c:url value="controller?command=changeLanguage" var="changeLanguageLinkToRu">
+    <c:param name="lang" value="ru"/>
+    <c:if test="${pageName != null}">
+        <fmt:setLocale value="en"/>
+        <c:param name="page" value="${pageName}"/>
+    </c:if>
+</c:url>
+<a href="${changeLanguageLinkToRu}"><fmt:message key='label.lang.ru'/></a>
+<br>
+<c:url value="controller?command=changeLanguage" var="changeLanguageLinkToEn">
+    <c:param name="lang" value="en"/>
+    <c:if test="${pageName != null}">
+        <fmt:setLocale value="en"/>
+        <c:param name="page" value="${pageName}"/>
+    </c:if>
+</c:url>
+<a href="${changeLanguageLinkToEn}"><fmt:message key='label.lang.en'/></a>
+<hr>

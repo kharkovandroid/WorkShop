@@ -1,0 +1,11 @@
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+
+<c:if test="${language != null && language eq \"en\"}">
+    <fmt:setLocale value="en"/>
+</c:if>
+
+<c:if test="${language != null && language eq \"ru\"}">
+    <fmt:setLocale value="ru"/>
+</c:if>
+
+<fmt:setBundle basename="textdata"/>

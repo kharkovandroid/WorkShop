@@ -1,0 +1,4 @@
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ page contentType="text/html;charset=UTF-8"%>
+<a href = "controller?command=logOut"><fmt:message key = "label.exit"/></a>
+<hr>

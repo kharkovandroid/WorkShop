@@ -1,0 +1,22 @@
+<taglib>
+    <tlib-version>1.0</tlib-version>
+    <jsp-version>2.0</jsp-version>
+    <short-name>TLD UserInfo</short-name>
+    <tag>
+        <name>out</name>
+        <tag-class>com.gmail.valvol98.tag.InfoUserTag</tag-class>
+        <body-content>empty</body-content>
+
+        <attribute>
+            <name>userName</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+
+        <attribute>
+            <name>userRole</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+</taglib>
